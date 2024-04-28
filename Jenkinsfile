@@ -11,6 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Compile and package code using ${BUILD_TOOL}"
+                echo "Testing SCM polling"
             }
         }
         stage('Unit and Integration Tests') {
